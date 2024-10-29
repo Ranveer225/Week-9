@@ -39,7 +39,7 @@ public class RegistrationFormApp extends Application {
         firstNameField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
             if (!isNowFocused) {
                 if (!firstNameField.getText().matches("^[A-Za-z]{2,25}$")) {
-                    feedbackLabel.setText("First Name must be 3-... letters.");
+                    feedbackLabel.setText("First Name is 2-25 letters.");
                 } else {
                     feedbackLabel.setText("");
                 }
@@ -50,7 +50,7 @@ public class RegistrationFormApp extends Application {
         lastNameField.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
             if (!isNowFocused) {
                 if (!lastNameField.getText().matches("^[A-Za-z]{2,25}$")) {
-                    feedbackLabel.setText("Last Name must be 3-... letters.");
+                    feedbackLabel.setText("Last Name is 2-25 letters.");
                 } else {
                     feedbackLabel.setText("");
                 }
@@ -118,4 +118,5 @@ public class RegistrationFormApp extends Application {
         launch(args);
     }
 }
+
 
