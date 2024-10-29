@@ -118,3 +118,4 @@ public class RegistrationFormApp extends Application {
         launch(args);
     }
 }
+
